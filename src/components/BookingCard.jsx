@@ -18,7 +18,7 @@ const BookingCard = ({ currentPage }) => {
         </h2>
         <span className="flex gap-2 justify-center">
           {currentPage !== "order" && (
-            <button type="button" onClick={() => dispatch(roomsDecrement())}>
+            <button type="button" aria-label="decrementBtn" onClick={() => dispatch(roomsDecrement())}>
               <AiOutlineMinusCircle color="#666666" fontSize="20px" />
             </button>
           )}
@@ -27,7 +27,7 @@ const BookingCard = ({ currentPage }) => {
             {rooms}
           </p>
           {currentPage !== "order" && (
-            <button type="button" onClick={() => dispatch(roomsIncrement())}>
+            <button type="button" aria-label="incrementBtn" onClick={() => dispatch(roomsIncrement())}>
               <AiFillPlusCircle color="#666666" fontSize="20px" />
             </button>
           )}
