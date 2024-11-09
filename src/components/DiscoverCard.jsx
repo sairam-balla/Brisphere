@@ -6,15 +6,15 @@ import { MdStar } from "react-icons/md";
 const DiscoverCard = ({ showImg }) => {
   return (
     <li className="shadow-lg  border-2 p-4 w-96 rounded-md ">
-      <img src={riverImg} alt="" />
+      {showImg && (<img src={riverImg} alt="river-img" /> )}
       <div className="flex gap-4">
-        {showImg && (
+        
           <img
             src={profileImg}
-            alt=""
+            alt="profile-img"
             className="aspect-square w-10 rounded-full"
           />
-        )}
+        
         <div>
           <h3 className="font-bold text-xl">Arjun Raghav</h3>
           <span className="flex gap-1">
