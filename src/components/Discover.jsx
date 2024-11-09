@@ -6,7 +6,7 @@ const Discover = () => {
       <h1 className="text-4xl text-center font-semibold p-6">Discover</h1>
       <ul className="flex flex-row flex-wrap justify-center items-center  gap-6">
         {Array.from({ length: 5 }, (_, index) => {
-          <DiscoverCard key={index} showImg={index === 1 ? true : false} />;
+          return <DiscoverCard key={index} showImg={index === 1 ? true : false} />;
         })}
       </ul>
     </section>
